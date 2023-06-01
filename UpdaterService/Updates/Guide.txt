@@ -1,0 +1,26 @@
+1-Create Folder With AppName And Prefix Id Number like (1-MyApplication)
+inside app folder
+
+2-create txt file named New_Features and write some thing there
+3-Inside Folder Create Folder (files) and copy new files for update there
+4-create empty txt file named init
+5-ready to call by clients
+
+
+notice : remember to recreate empty txt file named init inside app folder with every change in update files (add/edit)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

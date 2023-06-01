@@ -1,0 +1,10 @@
+0_5/25/2021 9:08:30 PM_خطا در زمان حذف فایل های بروز رسانی قبلی,The process cannot access the file 'D:\Projects\Updater\SampleApp\bin\Debug\updatefiles\output' because it is being used by another process.
+0_5/25/2021 9:10:01 PM_خطا در زمان حذف فایل های بروز رسانی قبلی,The process cannot access the file 'D:\Projects\Updater\SampleApp\bin\Debug\updatefiles\output' because it is being used by another process.
+0_5/25/2021 9:15:03 PM_خطا در زمان حذف فایل های بروز رسانی قبلی,The process cannot access the file 'D:\Projects\Updater\SampleApp\bin\Debug\updatefiles\output' because it is being used by another process.
+0_5/25/2021 10:53:14 PM_There was no endpoint listening at http://localhost:57718/UpdateService.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.,Inner Exception:Unable to connect to the remote server
+0_5/26/2021 12:08:11 AM_Value was either too large or too small for an Int32.
+1_5/26/2021 12:08:13 AM_خطا در زمان حذف فایل های بروز رسانی قبلی,The process cannot access the file 'D:\Projects\Updater\SampleApp\bin\Debug\updatefiles\output' because it is being used by another process.
+0_5/26/2021 12:10:35 AM_Value was either too large or too small for an Int32.
+1_5/26/2021 12:10:36 AM_خطا در زمان حذف فایل های بروز رسانی قبلی,The process cannot access the file 'D:\Projects\Updater\SampleApp\bin\Debug\updatefiles\output' because it is being used by another process.
+0_5/26/2021 12:15:13 AM_خطا در زمان حذف فایل های بروز رسانی قبلی,The process cannot access the file 'D:\Projects\Updater\SampleApp\bin\Debug\updatefiles\output' because it is being used by another process.
+0_5/26/2021 1:53:44 AM_There was no endpoint listening at http://localhost:57718/UpdateService.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.,Inner Exception:Unable to connect to the remote server

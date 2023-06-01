@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57718/UpdateService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UpdaterService.Models" />
+  <xs:import schemaLocation="http://localhost:57718/UpdateService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/UpdaterService" />
+  <xs:element name="SelfUpdateNeeded">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JsonInput" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SelfUpdateNeededResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SelfUpdateNeededResult" nillable="true" type="xs:boolean" />
+        <xs:element minOccurs="0" name="error" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileBlock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JsonInput" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFileBlockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFileBlockResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="error" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpdateInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AppName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UpdaterService.Models" minOccurs="0" name="localSystemInfo" nillable="true" type="q1:LocalSystemInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpdateInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/UpdaterService" minOccurs="0" name="GetUpdateInfoResult" nillable="true" type="q2:UpdateAppInfo" />
+        <xs:element minOccurs="0" name="error" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UpdaterService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UpdaterService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57718/UpdateService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UpdaterService.Models" />
+  <xs:complexType name="UpdateAppInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AppId" type="xs:int" />
+      <xs:element minOccurs="0" name="NewFeatures" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="extractZipFiles" type="xs:boolean" />
+      <xs:element minOccurs="0" name="files" nillable="true" type="tns:ArrayOfUpdateFileInfo" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/UpdaterService.Models" minOccurs="0" name="updatePriority" type="q1:UpdateVersionPriority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateAppInfo" nillable="true" type="tns:UpdateAppInfo" />
+  <xs:complexType name="ArrayOfUpdateFileInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UpdateFileInfo" nillable="true" type="tns:UpdateFileInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUpdateFileInfo" nillable="true" type="tns:ArrayOfUpdateFileInfo" />
+  <xs:complexType name="UpdateFileInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssemblyVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreationTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Delete" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EndPartId" type="xs:int" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsZipped" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Length" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Overwrite" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StartPartId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UpdateFileInfo" nillable="true" type="tns:UpdateFileInfo" />
+</xs:schema>

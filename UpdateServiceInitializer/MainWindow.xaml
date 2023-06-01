@@ -1,0 +1,34 @@
+﻿<Window x:Class="UpdateServiceInitializer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UpdateServiceInitializer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="22,23,0,0" TextWrapping="Wrap" Text="Apps" VerticalAlignment="Top"/>
+        <Button Name="Btn_Initialize" Click="Btn_Initialize_Click" Foreground="Green" Content="Initialize" HorizontalAlignment="Left" Margin="288,84,0,0" VerticalAlignment="Top" Width="138" Height="27"/>
+        <ListBox Name="Lst_Log" HorizontalAlignment="Left" Margin="49,163,0,25" Width="644"/>
+        <ComboBox Name="Cmb_Priority" HorizontalAlignment="Left" Margin="107,48,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,48,0,0" TextWrapping="Wrap" Text="Update Priority" VerticalAlignment="Top"/>
+        <ComboBox Name="Cmb_Apps" SelectionChanged="Cmb_Apps_SelectionChanged" HorizontalAlignment="Left" Margin="107,21,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Name="Btn_OpenAppDir" Click="Btn_OpenAppDir_Click" Content="Open App Folder" HorizontalAlignment="Left" Margin="232,21,0,0" VerticalAlignment="Top" Width="119"/>
+        <GroupBox Header="New App" Height="137" Margin="442,10,21,0" VerticalAlignment="Top">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="10,20,0,0" TextWrapping="Wrap" Text="App Name" VerticalAlignment="Top"/>
+                <TextBox Name="Txt_AppNAme" Height="23" Margin="72,20,25,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                <Button Name="Btn_AddApp" Click="Btn_AddApp_Click" Content="Add" HorizontalAlignment="Right" Margin="0,48,25,0" VerticalAlignment="Top" Width="75"/>
+                <CheckBox Name="Chk_OpenAfterCreateApp" IsChecked="True" Content="Open Folder After Create" HorizontalAlignment="Left" Margin="21,51,0,0" VerticalAlignment="Top"/>
+
+            </Grid>
+        </GroupBox>
+        <Button x:Name="Btn_StopInitialize" Click="Btn_StopInitialize_Click" Foreground="Red" Content="Stop" HorizontalAlignment="Left" Margin="288,116,0,0" VerticalAlignment="Top" Width="138" Height="27"/>
+        <ProgressBar Name="Prg_InitProgress" Height="10" Maximum="100" Margin="49,148,366,0" VerticalAlignment="Top"/>
+        <Button x:Name="Btn_ClearLog" Click="Btn_ClearLog_Click"  Content="Clear Log" HorizontalAlignment="Left" Margin="698,163,0,0" VerticalAlignment="Top" Width="77" Height="30"/>
+        <TextBox Name="Txt_MinimumRamSize" HorizontalAlignment="Left" Height="23" Margin="128,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,84,0,0" TextWrapping="Wrap" Text="Minimum Ram Size" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

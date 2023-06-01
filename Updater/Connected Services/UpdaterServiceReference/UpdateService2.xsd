@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UpdaterService.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UpdaterService.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="LocalSystemInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ComputerName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CpuFanRPM" type="xs:double" />
+      <xs:element minOccurs="0" name="CpuModel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CpuTemperature" type="xs:double" />
+      <xs:element minOccurs="0" name="CpuUsagePercent" type="xs:float" />
+      <xs:element minOccurs="0" name="DaylightSaving" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DisplayResolution" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FanRPM" type="xs:double" />
+      <xs:element minOccurs="0" name="FreeRamSize" type="xs:long" />
+      <xs:element minOccurs="0" name="GateWay" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HddFreeSpace" type="xs:int" />
+      <xs:element minOccurs="0" name="HddTemperature" type="xs:double" />
+      <xs:element minOccurs="0" name="HddTotalSpace" type="xs:int" />
+      <xs:element minOccurs="0" name="IpAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OsName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OsType" type="tns:OsType" />
+      <xs:element minOccurs="0" name="RamSize" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocalSystemInfo" nillable="true" type="tns:LocalSystemInfo" />
+  <xs:simpleType name="OsType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="_32bit" />
+      <xs:enumeration value="_64bit" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OsType" nillable="true" type="tns:OsType" />
+  <xs:simpleType name="UpdateVersionPriority">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Low" />
+      <xs:enumeration value="Normal" />
+      <xs:enumeration value="High" />
+      <xs:enumeration value="VeryHigh" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UpdateVersionPriority" nillable="true" type="tns:UpdateVersionPriority" />
+</xs:schema>
