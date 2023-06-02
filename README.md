@@ -21,7 +21,7 @@ How It Works :
 
 as you initialize an application in server by UpdateServiceInitializer app , it will create json file to manage information about files and then it will create parts for each files
 then when clients wants to update thier apps they also download json and retrieve parts and then concat them , in this flow this library keeps modular updating and many benefits like resume update and 
-live updating (any changes in files by owner in the server will detect after run initializer runs) 
+live updating (any changes in files by owner in the server will detect after run initializer runs) and configure an update for system requirements(app will not update if minimum requirement of target system not compatible with what defined in UpdateServiceInitializer)
 
 
 
